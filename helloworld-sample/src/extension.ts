@@ -19,5 +19,9 @@ export function activate(context: vscode.ExtensionContext) {
 		vscode.window.showInformationMessage('Hello World!');
 	});
 
+	// await new Promise(resolve => setTimeout(resolve, 5000));
+
 	context.subscriptions.push(disposable);
 }
+
+await new Promise(resolve => setTimeout(resolve, 5000));
